@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Pair</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andrew Hwang">
+    <meta name="keywords" content="homelessness, seattle, volunteer, volunteering, match, pair">
+    <link rel="icon" href="img/noun_Pear_868663.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+    <header>
+        <div class="container text-center pt-5 pb-5">
+            <h1 class="display-1">Pair</h1>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+            </ul>
+            <p class="lead">A platform that improves the flow of resources and volunteers to the places of most need.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card mb-4 small-shadow" alt="Card image cap">
+                        <img class="card img-top img-fluid" src="img/perry-grone-732606-unsplash.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta Noodles</h5>
+                            <p class="card-text text-truncate">5lbs of pasta noodles needed</p>
+                            <button class="btn">Pair</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card mb-4 small-shadow" alt="Card image cap">
+                        <img class="card img-top img-fluid" src="img/perry-grone-732606-unsplash.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Dishwasher</h5>
+                            <p class="card-text text-truncate">Dishwasher needed</p>
+                            <button class="btn">Pair</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card mb-4 small-shadow" alt="Card image cap">
+                        <img class="card img-top img-fluid" src="img/perry-grone-732606-unsplash.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Pianist</h5>
+                            <p class="card-text text-truncate">We're looking for a pianist for our dinner gathering.</p>
+                            <button class="btn">Pair</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <p>© 2018 Pair</p>
+    </footer>
+    <button type="button" class="btn" id="action" data-toggle="modal" data-target="#modalForm"> + </button>
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request Pair</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="titleInput">Title</label>
+                            <input type="text" class="form-control" id="titleInput" placeholder="Title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descriptionInput">Description</label>
+                            <input type="text" class="form-control" id="descriptionInput" placeholder="Description" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Image</label>
+                            <input type="file" class="form-control-file" id="fileInput" accept=".jpg,.jpeg,.png" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                            <button id="addCard" type="button" class="btn">Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
